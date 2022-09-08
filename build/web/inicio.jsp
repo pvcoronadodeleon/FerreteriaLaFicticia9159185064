@@ -9,9 +9,10 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Ferreteria La Ficticia</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Ferreteria La Ficticia</h1>
+        <h3>Sistema administrativo</h3>
     </body>
 </html>

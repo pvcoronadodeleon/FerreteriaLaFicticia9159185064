@@ -1,4 +1,4 @@
-package Conexion;
+package conexion;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -10,7 +10,6 @@ public class ConexionMySQL {
 
     public Connection conexion;
     public Statement sentencia;
-    public ResultSet resultado;
 
     public void ConectarBasedeDatos() {
         try {
