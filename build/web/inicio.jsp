@@ -4,6 +4,8 @@
     Author     : pvcor
 --%>
 
+<%@page import="clases.Usuario" %>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,7 +14,6 @@
         <title>Ferreteria La Ficticia</title>
     </head>
     <body>
-        <h1>Ferreteria La Ficticia</h1>
-        <h3>Sistema administrativo</h3>
+        <jsp:include page="masterpage/header.jsp"/>
     </body>
 </html>

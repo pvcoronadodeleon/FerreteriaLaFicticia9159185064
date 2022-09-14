@@ -18,6 +18,9 @@
             <input type="password" name="contra"/>
             <input type="submit" value="Iniciar Sesion"/>
         </form>
+        <%
+            session.invalidate();
+        %>
     </body>
 
 </html>
