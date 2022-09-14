@@ -5,13 +5,12 @@
 package servlets;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import funciones.FuncionesLogin;
 import javax.servlet.http.HttpSession;
+import funciones.FuncionesUsuario;
 
 /**
  *
@@ -34,11 +33,11 @@ public class Login extends HttpServlet {
             String usuario = request.getParameter("usuario");
             String contra = request.getParameter("contra");
             Integer IdUsuario;
-            FuncionesLogin funcionesLogin = new FuncionesLogin();
-            IdUsuario = funcionesLogin.IniciarSesion(usuario,contra);
+            FuncionesUsuario funcionesUsuario = new FuncionesUsuario();
+            IdUsuario = funcionesUsuario.IniciarSesion(usuario,contra);
             if (IdUsuario != 0){
                 HttpSession  session = request.getSession();
-                session.setAttribute("IdUsuario", IdUsuario);
+                session.setAttribute("Usuario", funcionesUsuario.ObtenerUsuario(IdUsuario));
                 request.getRequestDispatcher("inicio.jsp").forward(request, response);
             }else{
                 request.getRequestDispatcher("login.jsp").forward(request, response);
