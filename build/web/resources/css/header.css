@@ -1,0 +1,18 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Sep 13, 2022, 10:26:22 PM
+    Author     : pvcor
+*/
+
+header{
+    background: red;
+    display: block;
+    margin-top: 5px;
+    padding: 5px;
+    width: 95%;
+    height: auto;
+}
+
