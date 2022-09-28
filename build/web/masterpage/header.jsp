@@ -15,4 +15,7 @@
         out.println("<strong>" + usuario.getNombre() + " " + usuario.getApellido() + "</strong>");
     %>
     <a href="login.jsp">Cerrar Sesion</a>
+    <ul>
+        <li><a href="crearusuario.jsp">Crear Usuario</a> </li>
+    </ul>
 </header>

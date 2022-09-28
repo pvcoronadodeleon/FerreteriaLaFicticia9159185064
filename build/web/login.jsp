@@ -14,8 +14,8 @@
         <h1>Ferreteria La Ficticia</h1>
         <h3>Inicio de sesion</h3>
         <form action="Login" method="post">
-            <input type="text" name="usuario"/>
-            <input type="password" name="contra"/>
+            <label for="usuario">Usuario </label><input type="text" name="usuario"/>
+            <label for="contra">Contraseña </label><input type="password" name="contra"/>
             <input type="submit" value="Iniciar Sesion"/>
         </form>
         <%

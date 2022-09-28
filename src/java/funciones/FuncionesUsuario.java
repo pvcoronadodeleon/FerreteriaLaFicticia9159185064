@@ -60,4 +60,15 @@ public class FuncionesUsuario {
         }
         return IdUsuario;
     }
+    
+    public void CrearUsuario(Usuario usuario, String contra){
+        FuncionesDatos datos = new FuncionesDatos();
+        try{
+            String sql = "insert into usuario (usuario, contra, nombre, apellido, telefono, direccion, idRolUsuario) values ('" + usuario.getUsuario() + "',MD5('" + contra +  "'),'"+
+                    usuario.getNombre() + "','" + usuario.getApellido() +"','" + usuario.getTelefono()+"','" + usuario.getDireccion() +"',7)";
+            datos.insertarmodificareliminar(sql);
+        } catch (Exception e){
+            
+        }
+    }
 }
