@@ -10,12 +10,13 @@
     <h1>Ferreteria La Ficticia</h1>
     <h3>Sistema administrativo</h3>
     <%
-        Usuario usuario = new Usuario();
-        usuario = (Usuario) session.getAttribute("Usuario");
-        out.println("<strong>" + usuario.getNombre() + " " + usuario.getApellido() + "</strong>");
+        Usuario usuarioMostrar = new Usuario();
+        usuarioMostrar = (Usuario) session.getAttribute("Usuario");
+        out.println("<strong>" + usuarioMostrar.getNombre() + " " + usuarioMostrar.getApellido() + "</strong>");
     %>
     <a href="login.jsp">Cerrar Sesion</a>
     <ul>
-        <li><a href="crearusuario.jsp">Crear Usuario</a> </li>
+        <li><a href="crearusuario.jsp">Crear Usuario</a></li>
+        <li><a href="datosusuario.jsp">Informacion Usuario</a></li>
     </ul>
 </header>

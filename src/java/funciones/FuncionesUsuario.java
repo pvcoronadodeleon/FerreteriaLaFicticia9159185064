@@ -21,29 +21,29 @@ public class FuncionesUsuario {
         consulta = "select u.IDUsuario , u.Usuario , u.Nombre , u.Apellido , u.Telefono , u.Direccion , u.IdRolUsuario , u.Activo  from usuario u where u.IDUsuario = " + codigoUsuario.toString();
         DefaultTableModel datosUsuario = datos.CargarTabla(consulta);
         if (datosUsuario.getRowCount() > 0) {
-            if (!datosUsuario.getValueAt(0, 0).toString().equals("")){
-            usuario.setIdUsuario(parseInt(datosUsuario.getValueAt(0, 0).toString()));
+            if (!datosUsuario.getValueAt(0, 0).toString().equals("")) {
+                usuario.setIdUsuario(parseInt(datosUsuario.getValueAt(0, 0).toString()));
             }
-            if (!datosUsuario.getValueAt(0, 1).toString().equals("")){
-            usuario.setUsuario(datosUsuario.getValueAt(0, 1).toString());
+            if (!datosUsuario.getValueAt(0, 1).toString().equals("")) {
+                usuario.setUsuario(datosUsuario.getValueAt(0, 1).toString());
             }
-            if (!datosUsuario.getValueAt(0, 2).toString().equals("")){
-            usuario.setNombre(datosUsuario.getValueAt(0, 2).toString());
+            if (!datosUsuario.getValueAt(0, 2).toString().equals("")) {
+                usuario.setNombre(datosUsuario.getValueAt(0, 2).toString());
             }
-            if (!datosUsuario.getValueAt(0, 3).toString().equals("")){
-            usuario.setApellido(datosUsuario.getValueAt(0, 3).toString());
+            if (!datosUsuario.getValueAt(0, 3).toString().equals("")) {
+                usuario.setApellido(datosUsuario.getValueAt(0, 3).toString());
             }
-            if (!datosUsuario.getValueAt(0, 4).toString().equals("")){
-            usuario.setTelefono(datosUsuario.getValueAt(0, 4).toString());
+            if (!datosUsuario.getValueAt(0, 4).toString().equals("")) {
+                usuario.setTelefono(datosUsuario.getValueAt(0, 4).toString());
             }
-            if (!datosUsuario.getValueAt(0, 5).toString().equals("")){
-            usuario.setDireccion(datosUsuario.getValueAt(0, 5).toString());
+            if (!datosUsuario.getValueAt(0, 5).toString().equals("")) {
+                usuario.setDireccion(datosUsuario.getValueAt(0, 5).toString());
             }
-            if (!datosUsuario.getValueAt(0, 6).toString().equals("")){
-            usuario.setCodigoRolUsuario(parseInt(datosUsuario.getValueAt(0, 6).toString()));
+            if (!datosUsuario.getValueAt(0, 6).toString().equals("")) {
+                usuario.setCodigoRolUsuario(parseInt(datosUsuario.getValueAt(0, 6).toString()));
             }
-            if (!datosUsuario.getValueAt(0, 7).toString().equals("")){
-            usuario.setActivo(Boolean.valueOf(datosUsuario.getValueAt(0, 7).toString()));
+            if (!datosUsuario.getValueAt(0, 7).toString().equals("")) {
+                usuario.setActivo(Boolean.valueOf(datosUsuario.getValueAt(0, 7).toString()));
             }
         }
         return usuario;
@@ -60,15 +60,15 @@ public class FuncionesUsuario {
         }
         return IdUsuario;
     }
-    
-    public void CrearUsuario(Usuario usuario, String contra){
+
+    public void CrearUsuario(Usuario usuario, String contra) {
         FuncionesDatos datos = new FuncionesDatos();
-        try{
-            String sql = "insert into usuario (usuario, contra, nombre, apellido, telefono, direccion, idRolUsuario) values ('" + usuario.getUsuario() + "',MD5('" + contra +  "'),'"+
-                    usuario.getNombre() + "','" + usuario.getApellido() +"','" + usuario.getTelefono()+"','" + usuario.getDireccion() +"',7)";
+        try {
+            String sql = "insert into usuario (usuario, contra, nombre, apellido, telefono, direccion, idRolUsuario) values ('" + usuario.getUsuario() + "',MD5('" + contra + "'),'"
+                    + usuario.getNombre() + "','" + usuario.getApellido() + "','" + usuario.getTelefono() + "','" + usuario.getDireccion() + "',7)";
             datos.insertarmodificareliminar(sql);
-        } catch (Exception e){
-            
+        } catch (Exception e) {
+
         }
     }
 }
