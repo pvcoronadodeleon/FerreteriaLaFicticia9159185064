@@ -71,4 +71,21 @@ public class FuncionesUsuario {
 
         }
     }
+
+    public void ActualizarUsuario(Usuario usuario) {
+        FuncionesDatos datos = new FuncionesDatos();
+        try {
+            String sql = "update usuario ";
+            sql += "set ";
+            sql += "Nombre = '" + usuario.getNombre() + "', ";
+            sql += "Apellido = '" + usuario.getApellido() + "', ";
+            sql += "Usuario = '" + usuario.getUsuario() + "', ";
+            sql += "Telefono = '" + usuario.getTelefono() + "', ";
+            sql += "Direccion = '" + usuario.getDireccion() + "' ";
+            sql += "where IDUsuario = " + usuario.getIdUsuario();
+            datos.insertarmodificareliminar(sql);
+        } catch (Exception e) {
+
+        }
+    }
 }
