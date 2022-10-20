@@ -31,10 +31,10 @@
         <form name="DatosUsuario" action="ModificarUsuario" method="post">
             <label for="idusuario">IDUsuario </label><input type="text" name="idusuario" readonly="readonly" value="<%out.println(usuario.getIdUsuario());%>"/>
             <label for="usuario">Usuario </label><input type="text" name="usuario" value="<%out.println(usuario.getUsuario());%>"/>
-            <label for="nombre">Nombre </label><input type="text" name="nombre" value="<%out.println(usuario.getNombre());%>"/>
-            <label for="apellido">Apellido </label><input type="text" name="apellido" value="<%out.println(usuario.getApellido());%>"/>
-            <label for="telefono">Telefono </label><input type="text" name="telefono" value="<%out.println(usuario.getTelefono());%>"/>
-            <label for="direccion">Direccion </label><input type="text" name="direccion" value="<%out.println(usuario.getDireccion());%>"/>
+            <label for="nombre">Nombre </label><input type="text" name="nombre" value="<%out.println((usuario.getNombre() != null) ? usuario.getNombre() : "");%>"/>
+            <label for="apellido">Apellido </label><input type="text" name="apellido" value="<%out.println((usuario.getApellido() != null) ? usuario.getApellido() : "");%>"/>
+            <label for="telefono">Telefono </label><input type="text" name="telefono" value="<%out.println((usuario.getTelefono() != null) ? usuario.getTelefono() : "");%>"/>
+            <label for="direccion">Direccion </label><input type="text" name="direccion" value="<%out.println((usuario.getDireccion() != null) ? usuario.getDireccion() : "");%>"/>
             <input type="submit" value="Modificar"/>
         </form>
     </body>

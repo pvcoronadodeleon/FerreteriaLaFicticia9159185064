@@ -18,5 +18,6 @@
     <ul>
         <li><a href="crearusuario.jsp">Crear Usuario</a></li>
         <li><a href="datosusuario.jsp">Informacion Usuario</a></li>
+        <li><a href="listausuarios.jsp">Todos los Usuario</a></li>
     </ul>
 </header>

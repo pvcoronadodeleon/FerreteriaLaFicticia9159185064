@@ -8,7 +8,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 */
 
 header{
-    background: red;
+    background: gray;
     display: block;
     margin-top: 5px;
     padding: 5px;
@@ -16,3 +16,14 @@ header{
     height: auto;
 }
 
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+}
