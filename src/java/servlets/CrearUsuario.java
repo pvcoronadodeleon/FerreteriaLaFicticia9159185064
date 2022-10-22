@@ -39,6 +39,7 @@ public class CrearUsuario extends HttpServlet {
                 usuario.setDireccion(request.getParameter("direccion"));
                 FuncionesUsuario funcionesUsuario = new FuncionesUsuario();
                 funcionesUsuario.CrearUsuario(usuario, request.getParameter("contra"));
+                
             }catch(Exception e){
                 
             }

@@ -45,9 +45,9 @@ public class ModificarUsuario extends HttpServlet {
         usuarioSession = (Usuario) session.getAttribute("Usuario");
         if (usuarioSession.getIdUsuario() == usuario.getIdUsuario()) {
             session.setAttribute("Usuario", funcionesUsuario.ObtenerUsuario(usuario.getIdUsuario()));
-            request.getRequestDispatcher("datosusuario.jsp").forward(request, response);
+            response.sendRedirect("datosusuario.jsp");
         } else {
-            request.getRequestDispatcher("datosusuario.jsp?IDUsuario=" + usuario.getIdUsuario()).forward(request, response);
+            response.sendRedirect("datosusuario.jsp?IDUsuario=" + usuario.getIdUsuario());
         }
     }
 

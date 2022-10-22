@@ -8,22 +8,38 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this t
 */
 
 header{
-    background: gray;
+    margin: auto;
     display: block;
     margin-top: 5px;
     padding: 5px;
     width: 95%;
-    height: auto;
 }
 
 a{
-    display: block;
     text-decoration: none;
     color: black;
     cursor: pointer;
 }
 
-li{
-    text-decoration: none;
-    list-style: none;
+#NombreFerreteria{
+    display: inline-block;
+    padding: 5px;
+    width: 50%;
+    float: left;
 }
+
+#NombreUsuario{
+    display: block;
+    float: right;
+    width: 30%;
+}
+
+nav{
+    margin: auto;
+    clear: both;
+    float: left;
+    margin-top: 5px;
+    padding: 5px;
+    width: 95%;
+}
+

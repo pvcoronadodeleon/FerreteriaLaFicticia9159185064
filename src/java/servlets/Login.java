@@ -38,12 +38,12 @@ public class Login extends HttpServlet {
             if (IdUsuario != 0){
                 HttpSession  session = request.getSession();
                 session.setAttribute("Usuario", funcionesUsuario.ObtenerUsuario(IdUsuario));
-                request.getRequestDispatcher("inicio.jsp").forward(request, response);
+                response.sendRedirect("inicio.jsp");
             }else{
-                request.getRequestDispatcher("login.jsp").forward(request, response);
+                response.sendRedirect("login.jsp");
             }
         }catch(Exception e){
-            request.getRequestDispatcher("login.jsp").forward(request, response);
+            response.sendRedirect("login.jsp");
         } 
     }
 
