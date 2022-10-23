@@ -33,15 +33,37 @@
                     FuncionesUsuario funUsuario = new FuncionesUsuario();
                     usuario = funUsuario.ObtenerUsuario(IDUsuario);
                 %>
+                <div class="row">
                 <form name="DatosUsuario" action="ModificarUsuario" method="post">
-                    <label for="idusuario">IDUsuario </label><input type="text" name="idusuario" readonly="readonly" value="<%out.println(usuario.getIdUsuario());%>"/>
-                    <label for="usuario">Usuario </label><input type="text" name="usuario" value="<%out.println(usuario.getUsuario());%>"/>
-                    <label for="nombre">Nombre </label><input type="text" name="nombre" value="<%out.println((usuario.getNombre() != null) ? usuario.getNombre() : "");%>"/>
-                    <label for="apellido">Apellido </label><input type="text" name="apellido" value="<%out.println((usuario.getApellido() != null) ? usuario.getApellido() : "");%>"/>
-                    <label for="telefono">Telefono </label><input type="text" name="telefono" value="<%out.println((usuario.getTelefono() != null) ? usuario.getTelefono() : "");%>"/>
-                    <label for="direccion">Direccion </label><input type="text" name="direccion" value="<%out.println((usuario.getDireccion() != null) ? usuario.getDireccion() : "");%>"/>
-                    <input type="submit" value="Modificar"/>
+                    <div class="row">
+                        <div class="column"><label for="idusuario">IDUsuario </label></div>
+                        <div class="column"><input type="text" name="idusuario" readonly="readonly" value="<%out.println(usuario.getIdUsuario());%>"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="column"><label for="usuario">Usuario </label></div>
+                        <div class="column"><input type="text" name="usuario" value="<%out.println(usuario.getUsuario());%>"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="column"><label for="nombre">Nombre </label></div>
+                        <div class="column"><input type="text" name="nombre" value="<%out.println((usuario.getNombre() != null) ? usuario.getNombre() : "");%>"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="column"><label for="apellido">Apellido </label></div>
+                        <div class="column"><input type="text" name="apellido" value="<%out.println((usuario.getApellido() != null) ? usuario.getApellido() : "");%>"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="column"><label for="telefono">Telefono </label></div>
+                        <div class="column"><input type="text" name="telefono" value="<%out.println((usuario.getTelefono() != null) ? usuario.getTelefono() : "");%>"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="column"><label for="direccion">Direccion </label></div>
+                        <div class="column"><input type="text" name="direccion" value="<%out.println((usuario.getDireccion() != null) ? usuario.getDireccion() : "");%>"/></div>
+                    </div>
+                    <div class="row">
+                        <div><input type="submit" value="Modificar" class="btn btn-info" style="margin-top: 5px;"/></div>
+                    </div>
                 </form>
+                </div>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>

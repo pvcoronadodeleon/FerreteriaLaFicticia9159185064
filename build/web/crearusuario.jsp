@@ -19,13 +19,33 @@
             </div>
             <div class="row">
                 <form action="CrearUsuario" method="post">
-                    <label for="usuario">Usuario </label><input type="text" name="usuario"/>
-                    <label for="contra">Contraseña </label><input type="password" name="contra"/>
-                    <label for="nombre">Nombre</label><input type="text" name="nombre"/>
-                    <label for="apellido">Apellido </label><input type="text" name="apellido"/>
-                    <label for="telefono">Telefono </label><input type="text" name="telefono"/>
-                    <label for="direccion">Direccion </label><input type="text" name="direccion"/>
-                    <input type="submit" value="Crear"/>
+                    <div class="row">
+                        <div class="column"><label for="usuario">Usuario </label></div>
+                        <div class="column"><input type="text" name="usuario"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="column"><label for="contra">Contraseña </label></div>
+                        <div class="column"><input type="password" name="contra"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="column"><label for="nombre">Nombre </label></div>
+                        <div class="column"><input type="text" name="nombre"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="column"><label for="apellido">Apellido </label></div>
+                        <div class="column"><input type="text" name="apellido"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="column"><label for="telefono">Telefono </label></div>
+                        <div class="column"><input type="text" name="telefono"/></div>
+                    </div>
+                    <div class="row">
+                        <div class="column"><label for="direccion">Direccion </label></div>
+                        <div class="column"><input type="text" name="direccion""/></div>
+                    </div>
+                    <div class="row">
+                        <div><input type="submit" value="Crear" class="btn btn-info" style="margin-top: 5px;"/></div>
+                    </div>
                 </form>
             </div>
         </div>
