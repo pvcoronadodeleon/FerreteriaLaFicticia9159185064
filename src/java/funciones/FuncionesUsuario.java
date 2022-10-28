@@ -53,7 +53,7 @@ public class FuncionesUsuario {
         FuncionesDatos datos = new FuncionesDatos();
         Integer IdUsuario = 0;
         try {
-            String sql = "select u.IDUsuario from usuario u where u.Usuario = '" + usuario + "' and u.Contra = MD5('" + contra + "') and Activo = 1";
+            String sql = "select u.IDUsuario from usuario u where u.Usuario = '" + usuario + "' and u.Contra = MD5('" + contra + "')";
             IdUsuario = datos.retonarEntero(sql);
         } catch (Exception e) {
 

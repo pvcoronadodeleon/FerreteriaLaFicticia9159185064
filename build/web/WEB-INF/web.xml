@@ -12,6 +12,10 @@
         <servlet-name>ModificarUsuario</servlet-name>
         <servlet-class>servlets.ModificarUsuario</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CrearProducto</servlet-name>
+        <servlet-class>servlets.CrearProducto</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>ModificarUsuario</servlet-name>
         <url-pattern>/ModificarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CrearProducto</servlet-name>
+        <url-pattern>/CrearProducto</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
