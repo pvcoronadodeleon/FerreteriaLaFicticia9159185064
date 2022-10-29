@@ -107,7 +107,13 @@ public class FuncionesProducto {
     }
 
     public void ActualizarProducto(Producto producto) {
+        FuncionesDatos datos = new FuncionesDatos();
+        try {
+            String sql = "update Producto set nombre = '" + producto.getNombre()  + "', precio = " + producto.getPrecio() + " where IdProducto = " + producto.getIdProducto();
+            datos.insertarmodificareliminar(sql);
+        } catch (Exception e) {
 
+        }
     }
 
     public DefaultTableModel listarProductos() {
