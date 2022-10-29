@@ -28,7 +28,7 @@
                     producto = funcionesProducto.ObtenerProducto(IDProducto);
                 %>
                 <div class="row">
-                    <form name="DatosProducto" action="" method="post">
+                    <form name="DatosProducto" action="ModificarProducto" method="post">
                         <div class="row">
                             <div class="column"><label for="idproducto">IDProducto </label></div>
                             <div class="column"><input type="text" name="idproducto" readonly="readonly" value="<%out.println(producto.getIdProducto());%>"/></div>
