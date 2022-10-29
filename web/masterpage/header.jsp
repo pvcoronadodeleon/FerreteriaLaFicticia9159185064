@@ -38,6 +38,14 @@
                         <li><a class="dropdown-item" href="login.jsp">Cerrar Sesion</a></li>
                     </ul>
                 </li>
+                                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Producto
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="listaproductos.jsp">Lista de productos</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
