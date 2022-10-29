@@ -44,6 +44,7 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <li><a class="dropdown-item" href="listaproductos.jsp">Lista de productos</a></li>
+                        <li><a class="dropdown-item" href="crearproducto.jsp">Crear producto</a></li>
                     </ul>
                 </li>
             </ul>
