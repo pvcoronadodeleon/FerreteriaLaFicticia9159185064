@@ -27,7 +27,7 @@
                         DefaultTableModel listadoDeProductos = funcionesProducto.listarProductos();
                         if (listadoDeProductos.getRowCount() > 0) {
                             for (int i = 0; i < listadoDeProductos.getRowCount(); i++) {
-                                out.println("<tr><td>" + listadoDeProductos.getValueAt(i, 0).toString() + "</td><td>" + listadoDeProductos.getValueAt(i, 1).toString() + "</td><td>" + listadoDeProductos.getValueAt(i, 2).toString() + "</td><td>" + listadoDeProductos.getValueAt(i, 3).toString() + "</td></tr>");
+                                out.println("<tr><td><a href='datosproducto.jsp?IDProducto=" + listadoDeProductos.getValueAt(i, 0).toString() + "'>" + listadoDeProductos.getValueAt(i, 0).toString()  + "</a></td><td>" + listadoDeProductos.getValueAt(i, 1).toString() + "</td><td>" + listadoDeProductos.getValueAt(i, 2).toString() + "</td><td>" + listadoDeProductos.getValueAt(i, 3).toString() + "</td></tr>");
                             }
                         }
                     %>

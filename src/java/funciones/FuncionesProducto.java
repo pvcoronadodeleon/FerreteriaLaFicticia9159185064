@@ -31,12 +31,18 @@ public class FuncionesProducto {
             }
             if (datosProducto.getValueAt(0, 2) != null) {
                 producto.setPrecio(parseDouble(datosProducto.getValueAt(0, 2).toString()));
+            } else {
+                producto.setPrecio(0.00);
             }
             if (datosProducto.getValueAt(0, 3) != null) {
                 producto.setCantidad(parseInt(datosProducto.getValueAt(0, 3).toString()));
+            } else {
+                producto.setCantidad(0);
             }
             if (datosProducto.getValueAt(0, 4) != null) {
                 producto.setApartado(parseInt(datosProducto.getValueAt(0, 4).toString()));
+            } else {
+                producto.setApartado(0);
             }
         }
         return producto;
