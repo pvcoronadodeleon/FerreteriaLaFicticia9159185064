@@ -49,6 +49,12 @@
                             <div><input type="submit" value="Modificar" class="btn btn-info" style="margin-top: 5px;"/></div>
                         </div>
                     </form>
+                    <form name="EliminarProducto" action="EliminarProducto" method="post">
+                        <input type="text" name="idproducto" style="display: none;" readonly="readonly" value="<%out.println(producto.getIdProducto());%>"/>
+                        <div class="row">
+                            <div><input type="submit" value="Eliminar" class="btn btn-info" style="margin-top: 5px;"/></div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
